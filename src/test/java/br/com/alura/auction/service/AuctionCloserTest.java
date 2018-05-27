@@ -31,7 +31,6 @@ public class AuctionCloserTest {
 
     @Test
     public void shouldCloseAuctionsStartedALastWeek() {
-
     	Calendar oldDate = Calendar.getInstance();
         oldDate.set(1999, 1, 20);
 
@@ -68,7 +67,6 @@ public class AuctionCloserTest {
     
     @Test
     public void shouldNotCloseAuctionsStartedYesterday() {
-
     	Calendar oldDate = Calendar.getInstance();
         oldDate.add(Calendar.DATE, -1);
 
@@ -98,7 +96,6 @@ public class AuctionCloserTest {
     
     @Test
     public void shouldNotCloseAuctionsWhenThereAreNoAuctionsInProcess() {
-
         AuctionDao fakeAuctionRepository = mock(AuctionDao.class);
         
         when(fakeAuctionRepository.current()).thenReturn(new ArrayList<Auction>());
@@ -114,15 +111,15 @@ public class AuctionCloserTest {
     @Test
     public void shouldNotCloseAuctionsStartedLessThanAWeekAgo() {
 
-        Calendar ontem = Calendar.getInstance();
-        ontem.add(Calendar.DAY_OF_MONTH, -1);
+        Calendar yesterday = Calendar.getInstance();
+        yesterday.add(Calendar.DAY_OF_MONTH, -1);
 
         Auction auctionOne = new AuctionCreator().to("Plasma TV")
-        										 .onDate(ontem)
+        										 .onDate(yesterday)
         										 .build();
         
         Auction auctionTwo = new AuctionCreator().to("Refrigerator")
-        										 .onDate(ontem)
+        										 .onDate(yesterday)
         										 .build();
 
         AuctionRepository fakeAuctionRepository = mock(AuctionDao.class);
@@ -144,8 +141,7 @@ public class AuctionCloserTest {
     
     @Test
     public void shouldContinueExecutionEvenIfDaoFails() {
- 
-    	Calendar oldDate = Calendar.getInstance();
+     	Calendar oldDate = Calendar.getInstance();
         oldDate.set(1999, 1, 20);
 
         Auction auctionOne = new AuctionCreator().to("Plasma TV")
@@ -175,7 +171,6 @@ public class AuctionCloserTest {
     
     @Test
     public void shouldThrowExceptionToAllAuctionsOnTheList() {
-        
     	Calendar oldDate = Calendar.getInstance();
         oldDate.set(1999, 1, 20);
 
@@ -204,8 +199,7 @@ public class AuctionCloserTest {
     }
     
     @Test
-    public void shouldThrowExceptionToAllAuctiosOnTheListUsingAny() {
-        
+    public void shouldThrowExceptionToAllAuctionsOnTheListUsingAny() {
     	Calendar oldDate = Calendar.getInstance();
         oldDate.set(1999, 1, 20);
 
@@ -230,5 +224,4 @@ public class AuctionCloserTest {
 
         verify(fakeMailMan, never()).send(any(Auction.class));
     }
-    
 }

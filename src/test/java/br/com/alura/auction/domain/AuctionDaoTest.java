@@ -23,5 +23,4 @@ public class AuctionDaoTest {
 		
 		auctionDao.save(auction);
 	}
-
 }

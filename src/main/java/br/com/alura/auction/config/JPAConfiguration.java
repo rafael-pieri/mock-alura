@@ -18,7 +18,7 @@ public class JPAConfiguration {
 
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource,
-			Properties aditionalProperties) {
+			Properties properties) {
 
 		LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
 		JpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
@@ -26,18 +26,18 @@ public class JPAConfiguration {
 		factoryBean.setPackagesToScan("br.com.alura.auction.domain");
 		factoryBean.setJpaVendorAdapter(jpaVendorAdapter);
 		factoryBean.setDataSource(dataSource);
-		factoryBean.setJpaProperties(aditionalProperties);
+		factoryBean.setJpaProperties(properties);
 
 		return factoryBean;
 	}
 
 	@Bean
-	public Properties aditionalProperties() {
-		Properties props = new Properties();
-		props.setProperty("hibernate.dialect", "org.hibernate.dialect.OracleDialect");
-		props.setProperty("hibernate.show_sql", "true");
-		props.setProperty("hibernate.hbm2ddl.auto", "create-drop");
-		return props;
+	public Properties properties() {
+		Properties properties = new Properties();
+		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.OracleDialect");
+		properties.setProperty("hibernate.show_sql", "true");
+		properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+		return properties;
 	}
 
 	@Bean
@@ -54,5 +54,4 @@ public class JPAConfiguration {
 	public JpaTransactionManager transactionManager(EntityManagerFactory emf) {
 		return new JpaTransactionManager(emf);
 	}
-
 }

@@ -20,12 +20,14 @@ public class Appraiser {
 			throw new AuctionException("It's not possible to evaluate an auction without bids.");
 		}
 
-		for (Bid bid : auction.getBids()) {
-			if (bid.getValue() > highestOfAll)
+		auction.getBids().forEach((Bid bid) -> {
+			if (bid.getValue() > highestOfAll) {
 				highestOfAll = bid.getValue();
-			if (bid.getValue() < lowestOfAll)
+			}
+			if (bid.getValue() < lowestOfAll) {
 				lowestOfAll = bid.getValue();
-		}
+			}
+		});
 
 		threeHighest(auction);
 	}
@@ -33,7 +35,7 @@ public class Appraiser {
 	private void threeHighest(Auction auction) {
 		highest = new ArrayList<>(auction.getBids());
 
-		Collections.sort(highest, (firstBid, secondBid) -> secondBid.getValue().compareTo(firstBid.getValue()));
+		highest.sort((firstBid, secondBid) -> secondBid.getValue().compareTo(firstBid.getValue()));
 
 		highest = highest.subList(0, highest.size() > 3 ? 3 : highest.size());
 	}

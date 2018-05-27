@@ -61,14 +61,7 @@ public class Auction {
 	}
 
 	private int numberOfBids(User user) {
-		int total = 0;
-
-		for (Bid bid : bids) {
-			if (bid.getUser().equals(user))
-				total++;
-		}
-
-		return total;
+		return (int) bids.stream().filter(bid -> bid.getUser().equals(user)).count();
 	}
 
 	private Bid lastBid() {
@@ -95,10 +88,6 @@ public class Auction {
 		return closed;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
-
 	public Long getId() {
 		return id;
 	}
@@ -121,11 +110,7 @@ public class Auction {
 			return false;
 		Auction other = (Auction) obj;
 		if (description == null) {
-			if (other.description != null)
-				return false;
-		} else if (!description.equals(other.description))
-			return false;
-		return true;
+			return other.description == null;
+		} else return description.equals(other.description);
 	}
-
 }

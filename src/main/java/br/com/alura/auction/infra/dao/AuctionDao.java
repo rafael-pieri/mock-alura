@@ -47,5 +47,4 @@ public class AuctionDao implements AuctionRepository{
 	public void update(Auction auction) {
 		manager.merge(auction);
 	}
-
 }

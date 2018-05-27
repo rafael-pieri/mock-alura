@@ -24,7 +24,7 @@ public class AuctionCloser {
     public void close() {
         List<Auction> allCurrentAuctions = auctionRepository.current();
 
-        for (Auction auction : allCurrentAuctions) {
+        allCurrentAuctions.forEach((Auction auction) -> {
             try {
                 if (startedInTheLastWeek(auction)) {
                     auction.close();
@@ -32,11 +32,10 @@ public class AuctionCloser {
                     auctionRepository.update(auction);
                     mailMan.send(auction);
                 }
+            } catch (Exception exception) {
+                logger.error("Error to close auction " + auction.getDescription() + ". Error [%s]", exception);
             }
-            catch(Exception exception) {
-            	logger.error("Error to close auction " + auction.getDescription() + ". Error [%s]", exception);
-            }
-        }
+        });
     }
 
     private boolean startedInTheLastWeek(Auction auction) {
@@ -47,7 +46,7 @@ public class AuctionCloser {
         Calendar date = (Calendar) firstDate.clone();
         
         int daysInInterval = 0;
-        
+
         while (date.before(lastDate)) {
             date.add(Calendar.DAY_OF_MONTH, 1);
             daysInInterval++;

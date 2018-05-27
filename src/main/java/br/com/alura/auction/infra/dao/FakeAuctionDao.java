@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.alura.auction.domain.Auction;
+import java.util.stream.Collectors;
 
 public class FakeAuctionDao implements AuctionRepository {
 
@@ -14,27 +15,10 @@ public class FakeAuctionDao implements AuctionRepository {
 	}
 
 	public List<Auction> closed() {
-
-		List<Auction> filtered = new ArrayList<>();
-
-		for (Auction auction : auctions) {
-			if (auction.isClosed())
-				filtered.add(auction);
-		}
-
-		return filtered;
+		return auctions.stream().filter(Auction::isClosed).collect(Collectors.toList());
 	}
 
 	public List<Auction> current() {
-
-		List<Auction> filtered = new ArrayList<>();
-
-		for (Auction auction : auctions) {
-			if (!auction.isClosed())
-				filtered.add(auction);
-		}
-
-		return filtered;
+		return auctions.stream().filter(auction -> !auction.isClosed()).collect(Collectors.toList());
 	}
-
 }

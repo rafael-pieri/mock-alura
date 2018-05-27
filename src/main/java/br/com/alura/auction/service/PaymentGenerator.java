@@ -31,19 +31,16 @@ public class PaymentGenerator {
 	}
 
 	public void generate() {
-
 		List<Auction> closedAuctions = auctions.closed();
 
-		for (Auction auction : closedAuctions) {
+		closedAuctions.forEach(auction -> {
 			appraiser.evaluate(auction);
-
 			Payment newPayment = new Payment(appraiser.getHighestBid(), firstUtilDay());
 			paymentRepository.save(newPayment);
-		}
+		});
 	}
 
 	private Calendar firstUtilDay() {
-
 		Calendar date = clock.today();
 
 		int weekDay = date.get(Calendar.DAY_OF_WEEK);

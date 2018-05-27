@@ -16,7 +16,7 @@ public class AuctionCreator {
 
 	public AuctionCreator() {
 		this.date = Calendar.getInstance();
-		bids = new ArrayList<Bid>();
+		bids = new ArrayList<>();
 	}
 
 	public AuctionCreator to(String description) {
@@ -37,11 +37,8 @@ public class AuctionCreator {
 	public Auction build() {
 		Auction auction = new Auction(description, date);
 
-		for (Bid bid : bids) {
-			auction.propose(bid);
-		}
+		bids.forEach(auction::propose);
 
 		return auction;
 	}
-
 }

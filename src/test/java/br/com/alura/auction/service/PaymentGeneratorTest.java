@@ -8,6 +8,7 @@ import static org.mockito.Mockito.when;
 import java.util.Arrays;
 import java.util.Calendar;
 
+import java.util.Collections;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 
@@ -25,7 +26,6 @@ public class PaymentGeneratorTest {
 	
 	@Test
     public void shouldGeneratePaymentForAClosedAuction() {
-
         AuctionRepository auctionRepository = mock(AuctionRepository.class);
         PaymentRepository paymentRepository = mock(PaymentRepository.class);
 
@@ -34,7 +34,7 @@ public class PaymentGeneratorTest {
 								              .bid(new User("Mary"), 2500.0)
 								              .build();
 
-        when(auctionRepository.closed()).thenReturn(Arrays.asList(auction));
+        when(auctionRepository.closed()).thenReturn(Collections.singletonList(auction));
         
         PaymentGenerator paymentGenerator = new PaymentGenerator(auctionRepository, paymentRepository, new Appraiser());
         paymentGenerator.generate();
@@ -50,7 +50,6 @@ public class PaymentGeneratorTest {
 	
 	@Test
 	public void shouldPutPaymentsOnSaturdayToTheNextUsefulDay() {
-		
 		AuctionRepository auctionRepository = mock(AuctionRepository.class);
 		PaymentRepository paymentRepository = mock(PaymentRepository.class);
 		Clock clock = mock(Clock.class);
@@ -65,7 +64,7 @@ public class PaymentGeneratorTest {
 											  .bid(new User("Mary"), 2500.0)
 											  .build();
 	
-		when(auctionRepository.closed()).thenReturn(Arrays.asList(auction));
+		when(auctionRepository.closed()).thenReturn(Collections.singletonList(auction));
 	
 		PaymentGenerator paymentGenerator = 
 		            new PaymentGenerator(auctionRepository, paymentRepository, new Appraiser(), clock);
@@ -83,7 +82,6 @@ public class PaymentGeneratorTest {
 	
 	@Test
 	public void shouldPutPaymentsOnSundayToTheNextUsefulDay() {
-		
 		AuctionRepository auctionRepository = mock(AuctionRepository.class);
 		PaymentRepository paymentRepository = mock(PaymentRepository.class);
 		Clock clock = mock(Clock.class);
@@ -98,7 +96,7 @@ public class PaymentGeneratorTest {
 											  .bid(new User("Mary"), 2500.0)
 											  .build();
 	
-		when(auctionRepository.closed()).thenReturn(Arrays.asList(auction));
+		when(auctionRepository.closed()).thenReturn(Collections.singletonList(auction));
 	
 		PaymentGenerator paymentGenerator = 
 		            new PaymentGenerator(auctionRepository, paymentRepository, new Appraiser(), clock);
