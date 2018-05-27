@@ -4,5 +4,5 @@ import br.com.alura.auction.domain.Payment;
 
 public interface PaymentRepository {
 
-	void save(Payment payment);
+    void save(Payment payment);
 }

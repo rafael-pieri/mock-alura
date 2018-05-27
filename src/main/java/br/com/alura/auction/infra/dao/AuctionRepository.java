@@ -1,16 +1,16 @@
 package br.com.alura.auction.infra.dao;
 
+import br.com.alura.auction.domain.Auction;
 import java.util.List;
 
-import br.com.alura.auction.domain.Auction;
-
 public interface AuctionRepository {
-	
-	void save(Auction auction);
 
-	List<Auction> closed();
+    void save(Auction auction);
 
-	List<Auction> current();
+    List<Auction> closed();
 
-	default void update(Auction auction) {}
+    List<Auction> current();
+
+    default void update(Auction auction) {
+    }
 }

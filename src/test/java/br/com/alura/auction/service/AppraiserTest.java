@@ -15,26 +15,26 @@ import org.junit.Test;
 
 public class AppraiserTest {
 
-	private Appraiser appraiser;
-	private User mary;
-	private User peter;
-	private User john;
+    private Appraiser appraiser;
+    private User mary;
+    private User peter;
+    private User john;
 
-	@Before
-	public void createAppraiser() {
-		this.appraiser = new Appraiser();
-		this.john = new User("John");
-		this.peter = new User("Peter");
-		this.mary = new User("Mary");
-	}
+    @Before
+    public void createAppraiser() {
+        this.appraiser = new Appraiser();
+        this.john = new User("John");
+        this.peter = new User("Peter");
+        this.mary = new User("Mary");
+    }
 
-	@Test(expected=RuntimeException.class)
-	public void shouldNotEvaluateAuctionsWithoutBid() {
-		Auction auction = new AuctionCreator().to("New Playstation 3")
-				                              .build();
+    @Test(expected = RuntimeException.class)
+    public void shouldNotEvaluateAuctionsWithoutBid() {
+        Auction auction = new AuctionCreator().to("New Playstation 3")
+            .build();
 
-		appraiser.evaluate(auction);
-	}
+        appraiser.evaluate(auction);
+    }
 
     @Test
     public void shouldUnderstandBidsInDescendingOrder() {
@@ -52,7 +52,7 @@ public class AppraiserTest {
 
     @Test
     public void shouldUnderstandAuctionWithOnlyBid() {
-    	User john = new User("John");
+        User john = new User("John");
         Auction auction = new Auction("New Playstation 3");
 
         auction.propose(new Bid(john, 1000.0));
@@ -66,11 +66,11 @@ public class AppraiserTest {
     @Test
     public void shouldFindTheThreeHighestBids() {
         Auction auction = new AuctionCreator().to("New Playstation 3")
-							        		  .bid(john, 100.0)
-							        		  .bid(mary, 200.0)
-							        		  .bid(john, 300.0)
-							        		  .bid(mary, 400.0)
-							        		  .build();
+            .bid(john, 100.0)
+            .bid(mary, 200.0)
+            .bid(john, 300.0)
+            .bid(mary, 400.0)
+            .build();
 
         appraiser.evaluate(auction);
 
@@ -78,8 +78,8 @@ public class AppraiserTest {
         assertEquals(3, highest.size());
 
         assertThat(highest, hasItems(new Bid(mary, 400d),
-        							 new Bid(john, 300d),
-        							 new Bid(mary, 200d)
+            new Bid(john, 300d),
+            new Bid(mary, 200d)
         ));
     }
 }

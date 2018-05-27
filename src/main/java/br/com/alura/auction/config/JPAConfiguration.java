@@ -16,42 +16,42 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class JPAConfiguration {
 
-	@Bean
-	public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource,
-			Properties properties) {
+    @Bean
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource,
+                                                                       Properties properties) {
 
-		LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
-		JpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
+        LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
+        JpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
 
-		factoryBean.setPackagesToScan("br.com.alura.auction.domain");
-		factoryBean.setJpaVendorAdapter(jpaVendorAdapter);
-		factoryBean.setDataSource(dataSource);
-		factoryBean.setJpaProperties(properties);
+        factoryBean.setPackagesToScan("br.com.alura.auction.domain");
+        factoryBean.setJpaVendorAdapter(jpaVendorAdapter);
+        factoryBean.setDataSource(dataSource);
+        factoryBean.setJpaProperties(properties);
 
-		return factoryBean;
-	}
+        return factoryBean;
+    }
 
-	@Bean
-	public Properties properties() {
-		Properties properties = new Properties();
-		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.OracleDialect");
-		properties.setProperty("hibernate.show_sql", "true");
-		properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
-		return properties;
-	}
+    @Bean
+    public Properties properties() {
+        Properties properties = new Properties();
+        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+        properties.setProperty("hibernate.show_sql", "true");
+        properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+        return properties;
+    }
 
-	@Bean
-	public DataSource dataSource() {
-		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		dataSource.setUsername("finpac");
-		dataSource.setPassword("finpac");
-		dataSource.setUrl("jdbc:oracle:thin:@192.168.56.101:1521:bctst11g");
-		dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-		return dataSource;
-	}
+    @Bean
+    public DataSource dataSource() {
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setUsername("root");
+        dataSource.setPassword("root");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/mockDB?createDatabaseIfNotExist=true&useSSL=false");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        return dataSource;
+    }
 
-	@Bean
-	public JpaTransactionManager transactionManager(EntityManagerFactory emf) {
-		return new JpaTransactionManager(emf);
-	}
+    @Bean
+    public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+        return new JpaTransactionManager(entityManagerFactory);
+    }
 }
