@@ -1,7 +1,7 @@
 package br.com.alura.auction.service;
 
 import br.com.alura.auction.domain.Auction;
-import br.com.alura.auction.infra.dao.AuctionRepository;
+import br.com.alura.auction.repository.AuctionRepository;
 import java.util.Calendar;
 import java.util.List;
 import org.apache.log4j.Logger;

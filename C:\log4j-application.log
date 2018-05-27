@@ -11009,3 +11009,1438 @@ java.lang.RuntimeException
 2018-05-27 02:12:32 DEBUG CascadeStyles:268 - External cascade style regsitration [persist : STYLE_PERSIST] overrode base registration [STYLE_PERSIST_SKIPLAZY]
 2018-05-27 02:12:32 DEBUG AbstractServiceRegistryImpl:414 - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
 2018-05-27 02:12:32 DEBUG BootstrapServiceRegistryImpl:295 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2018-05-27 16:06:05 DEBUG logging:38 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-05-27 16:06:05 DEBUG LogHelper:102 - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: sun.misc.Launcher$AppClassLoader@18b4aac2
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: org.springframework.jdbc.datasource.DriverManagerDataSource@26b3fd41
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/home/rafael/workspace/learning/mock-alura/target/test-classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		br.com.alura.auction.domain.Auction
+		br.com.alura.auction.domain.Bid
+		br.com.alura.auction.domain.Payment
+		br.com.alura.auction.domain.User]
+	Mapping files names []
+	Properties []
+2018-05-27 16:06:05 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2018-05-27 16:06:05 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2018-05-27 16:06:05 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2018-05-27 16:06:05 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+2018-05-27 16:06:05 INFO  Version:45 - HHH000412: Hibernate Core {5.2.10.Final}
+2018-05-27 16:06:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-05-27 16:06:05 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2018-05-27 16:06:05 DEBUG RegionFactoryInitiator:75 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2018-05-27 16:06:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@20c0a64d
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@20c0a64d
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@20c0a64d
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@41ab013
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@79dc5318
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration yes_no -> org.hibernate.type.YesNoType@63611043
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@f107c50
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@f107c50
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@f107c50
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration character -> org.hibernate.type.CharacterType@60410cd
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration char -> org.hibernate.type.CharacterType@60410cd
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@60410cd
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@31add175
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@31add175
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@31add175
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration integer -> org.hibernate.type.IntegerType@7922d892
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration int -> org.hibernate.type.IntegerType@7922d892
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@7922d892
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@71e9ebae
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@71e9ebae
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@71e9ebae
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@6f44a157
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@6f44a157
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6f44a157
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@d771cc9
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@d771cc9
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@d771cc9
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@46b61c56
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@46b61c56
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@12d2ce03
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@12d2ce03
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration string -> org.hibernate.type.StringType@1984b1f
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.String -> org.hibernate.type.StringType@1984b1f
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@6d167f58
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@19c65cdc
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration url -> org.hibernate.type.UrlType@1fb669c3
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@1fb669c3
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration Duration -> org.hibernate.type.DurationType@68df9280
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@68df9280
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration Instant -> org.hibernate.type.InstantType@5b6ec132
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5b6ec132
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@7b205dbd
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@7b205dbd
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@600b90df
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@600b90df
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3d9c13b5
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3d9c13b5
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7582ff54
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7582ff54
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@78641d23
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@78641d23
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2bb3058
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2bb3058
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration date -> org.hibernate.type.DateType@632ceb35
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@632ceb35
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration time -> org.hibernate.type.TimeType@130e116b
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@130e116b
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration timestamp -> org.hibernate.type.TimestampType@2fd953a6
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2fd953a6
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2fd953a6
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@5f9be66c
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration calendar -> org.hibernate.type.CalendarType@6ccdb29f
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6ccdb29f
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6ccdb29f
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7b420819
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration locale -> org.hibernate.type.LocaleType@4b41dd5c
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4b41dd5c
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration currency -> org.hibernate.type.CurrencyType@56928307
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@56928307
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@38089a5a
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@38089a5a
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration class -> org.hibernate.type.ClassType@3cdf2c61
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3cdf2c61
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@54e7df6a
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@54e7df6a
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@58326051
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration binary -> org.hibernate.type.BinaryType@598bd2ba
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration byte[] -> org.hibernate.type.BinaryType@598bd2ba
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration [B -> org.hibernate.type.BinaryType@598bd2ba
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@38234a38
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@38234a38
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@38234a38
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration row_version -> org.hibernate.type.RowVersionType@32c726ee
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration image -> org.hibernate.type.ImageType@36328d33
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration characters -> org.hibernate.type.CharArrayType@524f3b3a
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration char[] -> org.hibernate.type.CharArrayType@524f3b3a
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration [C -> org.hibernate.type.CharArrayType@524f3b3a
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@77102b91
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@77102b91
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@77102b91
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration text -> org.hibernate.type.TextType@3f9342d4
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration ntext -> org.hibernate.type.NTextType@3d3e5463
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration blob -> org.hibernate.type.BlobType@6f63b475
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6f63b475
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5bf8fa12
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration clob -> org.hibernate.type.ClobType@72437d8d
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@72437d8d
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration nclob -> org.hibernate.type.NClobType@177bea38
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@177bea38
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2631f68c
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@30af5b6b
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration serializable -> org.hibernate.type.SerializableType@4f9a2c08
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration object -> org.hibernate.type.ObjectType@344f4dea
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@344f4dea
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@648c94da
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2a62b5bc
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@53de625d
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@535779e4
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@53fd0d10
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6c0d9d86
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4ce1d6d0
+2018-05-27 16:06:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@24111ef1
+2018-05-27 16:06:06 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : MySQL
+    version : 5.7.22-0ubuntu0.16.04.1
+      major : 5
+      minor : 7
+2018-05-27 16:06:06 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.11 (Revision: 6d4eaa273bc181b4cf1c8ad0821a2227f116fedf)
+      major : 8
+      minor : 0
+2018-05-27 16:06:06 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2018-05-27 16:06:06 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-27 16:06:06 DEBUG IdentifierHelperBuilder:117 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2018-05-27 16:06:06 DEBUG IdentifierHelperBuilder:191 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2018-05-27 16:06:06 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2018-05-27 16:06:06 DEBUG Namespace:47 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2018-05-27 16:06:06 DEBUG AnnotationBinder:511 - Binding entity from annotated class: br.com.alura.auction.domain.Auction
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2018-05-27 16:06:06 DEBUG EntityBinder:419 - Import with entity name Auction
+2018-05-27 16:06:06 DEBUG EntityBinder:695 - Bind entity br.com.alura.auction.domain.Auction on table MOCK_AUCTION
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_AUCTION), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.Auction:id]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property id
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='auction'}
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_AUCTION), mappingColumn=bids, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_AUCTION), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_AUCTION), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_AUCTION), mappingColumn=bids_KEY, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='bids_KEY', referencedColumn='null', mappedBy='null'}
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='auction'}
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='auction'}
+2018-05-27 16:06:06 DEBUG CollectionBinder:388 - Collection role: br.com.alura.auction.domain.Auction.bids
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property bids
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_AUCTION), mappingColumn=CLOSED, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property closed with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.Auction:closed]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for closed
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property closed
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_AUCTION), mappingColumn=AUCTION_DATE, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property date with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.Auction:date]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for date
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property date
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_AUCTION), mappingColumn=DESCRIPTION, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property description with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.Auction:description]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for description
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property description
+2018-05-27 16:06:06 DEBUG AnnotationBinder:511 - Binding entity from annotated class: br.com.alura.auction.domain.Bid
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2018-05-27 16:06:06 DEBUG EntityBinder:419 - Import with entity name Bid
+2018-05-27 16:06:06 DEBUG EntityBinder:695 - Bind entity br.com.alura.auction.domain.Bid on table MOCK_BID
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_BID), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.Bid:id]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property id
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='ID', referencedColumn='', mappedBy=''}
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_BID), mappingColumn=auction, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property auction
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_BID), mappingColumn=user, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property user
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_BID), mappingColumn=value, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property value with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.Bid:value]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for value
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property value
+2018-05-27 16:06:06 DEBUG AnnotationBinder:511 - Binding entity from annotated class: br.com.alura.auction.domain.Payment
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2018-05-27 16:06:06 DEBUG EntityBinder:419 - Import with entity name Payment
+2018-05-27 16:06:06 DEBUG EntityBinder:695 - Bind entity br.com.alura.auction.domain.Payment on table MOCK_PAYMENT
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_PAYMENT), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.Payment:id]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property id
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_PAYMENT), mappingColumn=date, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property date with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.Payment:date]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for date
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property date
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_PAYMENT), mappingColumn=value, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property value with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.Payment:value]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for value
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property value
+2018-05-27 16:06:06 DEBUG AnnotationBinder:511 - Binding entity from annotated class: br.com.alura.auction.domain.User
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2018-05-27 16:06:06 DEBUG EntityBinder:419 - Import with entity name User
+2018-05-27 16:06:06 DEBUG EntityBinder:695 - Bind entity br.com.alura.auction.domain.User on table MOCK_USER
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_USER), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.User:id]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property id
+2018-05-27 16:06:06 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(MOCK_USER), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2018-05-27 16:06:06 DEBUG PropertyBinder:174 - MetadataSourceProcessor property name with lazy=false
+2018-05-27 16:06:06 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [br.com.alura.auction.domain.User:name]
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:411 - building SimpleValue for name
+2018-05-27 16:06:06 DEBUG PropertyBinder:265 - Building property name
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for closed
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for date
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for description
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for value
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for date
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for value
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2018-05-27 16:06:06 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for name
+2018-05-27 16:06:06 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [mock_auction]
+2018-05-27 16:06:06 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [mock_bid]
+2018-05-27 16:06:06 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [mock_payment]
+2018-05-27 16:06:06 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [mock_user]
+2018-05-27 16:06:06 DEBUG CollectionSecondPass:51 - Second pass for collection: br.com.alura.auction.domain.Auction.bids
+2018-05-27 16:06:06 DEBUG CollectionBinder:830 - Binding a OneToMany: br.com.alura.auction.domain.Auction.bids through a foreign key
+2018-05-27 16:06:06 DEBUG CollectionBinder:868 - Mapping collection: br.com.alura.auction.domain.Auction.bids -> MOCK_BID
+2018-05-27 16:06:06 DEBUG TableBinder:565 - Retrieving property br.com.alura.auction.domain.Bid.auction
+2018-05-27 16:06:06 DEBUG CollectionSecondPass:68 - Mapped collection key: ID, one-to-many: br.com.alura.auction.domain.Bid
+2018-05-27 16:06:06 DEBUG InFlightMetadataCollectorImpl:1798 - Resolving reference to class: br.com.alura.auction.domain.Auction
+2018-05-27 16:06:07 DEBUG InFlightMetadataCollectorImpl:1798 - Resolving reference to class: br.com.alura.auction.domain.User
+2018-05-27 16:06:07 DEBUG InFlightMetadataCollectorImpl:1798 - Resolving reference to class: br.com.alura.auction.domain.Auction
+2018-05-27 16:06:07 DEBUG InFlightMetadataCollectorImpl:1798 - Resolving reference to class: br.com.alura.auction.domain.User
+2018-05-27 16:06:07 DEBUG SessionFactoryImpl:199 - Building session factory
+2018-05-27 16:06:07 DEBUG Settings:69 - SessionFactory name : null
+2018-05-27 16:06:07 DEBUG Settings:70 - Automatic flush during beforeCompletion(): enabled
+2018-05-27 16:06:07 DEBUG Settings:71 - Automatic session close at end of transaction: disabled
+2018-05-27 16:06:07 DEBUG Settings:73 - Statistics: disabled
+2018-05-27 16:06:07 DEBUG Settings:75 - Deleted entity synthetic identifier rollback: disabled
+2018-05-27 16:06:07 DEBUG Settings:76 - Default entity-mode: pojo
+2018-05-27 16:06:07 DEBUG Settings:77 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2018-05-27 16:06:07 DEBUG Settings:78 - Allow initialization of lazy state outside session : disabled
+2018-05-27 16:06:07 DEBUG Settings:80 - Using BatchFetchStyle : LEGACY
+2018-05-27 16:06:07 DEBUG Settings:81 - Default batch fetch size: -1
+2018-05-27 16:06:07 DEBUG Settings:82 - Maximum outer join fetch depth: 2
+2018-05-27 16:06:07 DEBUG Settings:83 - Default null ordering: NONE
+2018-05-27 16:06:07 DEBUG Settings:84 - Order SQL updates by primary key: disabled
+2018-05-27 16:06:07 DEBUG Settings:85 - Order SQL inserts for batching: disabled
+2018-05-27 16:06:07 DEBUG Settings:87 - multi-tenancy strategy : NONE
+2018-05-27 16:06:07 DEBUG Settings:89 - JTA Track by Thread: enabled
+2018-05-27 16:06:07 DEBUG Settings:91 - Query language substitutions: {}
+2018-05-27 16:06:07 DEBUG Settings:92 - JPA query language strict compliance: disabled
+2018-05-27 16:06:07 DEBUG Settings:93 - Named query checking : enabled
+2018-05-27 16:06:07 DEBUG Settings:95 - Second-level cache: enabled
+2018-05-27 16:06:07 DEBUG Settings:96 - Second-level query cache: disabled
+2018-05-27 16:06:07 DEBUG Settings:97 - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@2a2bb0eb
+2018-05-27 16:06:07 DEBUG Settings:98 - Second-level cache region prefix: null
+2018-05-27 16:06:07 DEBUG Settings:99 - Optimize second-level cache for minimal puts: disabled
+2018-05-27 16:06:07 DEBUG Settings:100 - Structured second-level cache entries: disabled
+2018-05-27 16:06:07 DEBUG Settings:101 - Second-level cache direct-reference entries: disabled
+2018-05-27 16:06:07 DEBUG Settings:102 - Automatic eviction of collection cache: disabled
+2018-05-27 16:06:07 DEBUG Settings:104 - JDBC batch size: 15
+2018-05-27 16:06:07 DEBUG Settings:105 - JDBC batch updates for versioned data: enabled
+2018-05-27 16:06:07 DEBUG Settings:106 - Scrollable result sets: enabled
+2018-05-27 16:06:07 DEBUG Settings:107 - Wrap result sets: disabled
+2018-05-27 16:06:07 DEBUG Settings:108 - JDBC3 getGeneratedKeys(): enabled
+2018-05-27 16:06:07 DEBUG Settings:109 - JDBC result set fetch size: null
+2018-05-27 16:06:07 DEBUG Settings:110 - Connection release mode: ON_CLOSE
+2018-05-27 16:06:07 DEBUG Settings:111 - Generate SQL with comments: disabled
+2018-05-27 16:06:07 DEBUG SessionFactoryImpl:254 - Session factory constructed with filter configurations : {}
+2018-05-27 16:06:07 DEBUG SessionFactoryImpl:255 - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, java.class.path=/home/rafael/.local/share/JetBrains/Toolbox/apps/IDEA-C/ch-0/173.4674.33/lib/idea_rt.jar:/home/rafael/.local/share/JetBrains/Toolbox/apps/IDEA-C/ch-0/173.4674.33/plugins/junit/lib/junit-rt.jar:/home/rafael/.local/share/JetBrains/Toolbox/apps/IDEA-C/ch-0/173.4674.33/plugins/junit/lib/junit5-rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/deploy.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-oracle/jre/lib/javaws.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfxswt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-oracle/jre/lib/plugin.jar:/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/home/rafael/workspace/learning/mock-alura/target/test-classes:/home/rafael/workspace/learning/mock-alura/target/classes:/home/rafael/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/rafael/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/rafael/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:/home/rafael/.m2/repository/org/hibernate/hibernate-core/5.2.10.Final/hibernate-core-5.2.10.Final.jar:/home/rafael/.m2/repository/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar:/home/rafael/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/rafael/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/home/rafael/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/rafael/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/jboss-transaction-api_1.2_spec-1.0.1.Final.jar:/home/rafael/.m2/repository/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final.jar:/home/rafael/.m2/repository/com/fasterxml/classmate/1.3.0/classmate-1.3.0.jar:/home/rafael/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/rafael/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/home/rafael/.m2/repository/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar:/home/rafael/.m2/repository/com/google/protobuf/protobuf-java/2.6.0/protobuf-java-2.6.0.jar:/home/rafael/.m2/repository/org/springframework/spring-core/5.0.0.RELEASE/spring-core-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/spring-jcl/5.0.0.RELEASE/spring-jcl-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/data/spring-data-jpa/2.0.0.RELEASE/spring-data-jpa-2.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/data/spring-data-commons/2.0.0.RELEASE/spring-data-commons-2.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/spring-orm/5.0.0.RELEASE/spring-orm-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/spring-jdbc/5.0.0.RELEASE/spring-jdbc-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/spring-aop/5.0.0.RELEASE/spring-aop-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/spring-tx/5.0.0.RELEASE/spring-tx-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10.jar:/home/rafael/.m2/repository/org/springframework/spring-context/5.0.0.RELEASE/spring-context-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/spring-expression/5.0.0.RELEASE/spring-expression-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/spring-beans/5.0.0.RELEASE/spring-beans-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/org/springframework/spring-test/5.0.0.RELEASE/spring-test-5.0.0.RELEASE.jar:/home/rafael/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/rafael/.m2/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar:/home/rafael/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/rafael/.local/share/JetBrains/Toolbox/apps/IDEA-C/ch-0/173.4674.33/lib/idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=http://java.oracle.com/, user.timezone=America/Sao_Paulo, user.country.format=BR, os.name=Linux, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 @w@/tmp/idea_working_dirs_junit.tmp @/tmp/idea_junit.tmp -socket34244, javax.persistence.sharedCache.mode=UNSPECIFIED, sun.cpu.endian=little, user.home=/home/rafael, user.language=en, java.specification.vendor=Oracle Corporation, java.home=/usr/lib/jvm/java-8-oracle/jre, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, hibernate.hbm2ddl.auto=create-drop, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_171-b11, user.name=rafael, path.separator=:, os.version=4.4.0-127-generic, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/tmp, java.version=1.8.0_171, user.dir=/home/rafael/workspace/learning/mock-alura, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, user.language.format=pt, sun.os.patch.level=unknown, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@4c5204af, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.171-b11, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=org.springframework.jdbc.datasource.DriverManagerDataSource@26b3fd41, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, sun.io.unicode.encoding=UnicodeLittle, java.class.version=52.0}
+2018-05-27 16:06:07 DEBUG JaccIntegrator:80 - Skipping JACC integration as it was not enabled
+2018-05-27 16:06:07 DEBUG CascadeStyles:268 - External cascade style regsitration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+2018-05-27 16:06:07 DEBUG SessionFactoryImpl:294 - Instantiated session factory
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [br.com.alura.auction.domain.Bid] is safe
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.com.alura.auction.domain.Bid
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [br.com.alura.auction.domain.Bid] is safe
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.com.alura.auction.domain.Bid
+2018-05-27 16:06:07 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: br.com.alura.auction.domain.Bid (class must be instantiated by Interceptor)
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [br.com.alura.auction.domain.Auction] is safe
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.com.alura.auction.domain.Auction
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [br.com.alura.auction.domain.Auction] is safe
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.com.alura.auction.domain.Auction
+2018-05-27 16:06:07 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: br.com.alura.auction.domain.Auction (class must be instantiated by Interceptor)
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [br.com.alura.auction.domain.Payment] is safe
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.com.alura.auction.domain.Payment
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [br.com.alura.auction.domain.Payment] is safe
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.com.alura.auction.domain.Payment
+2018-05-27 16:06:07 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: br.com.alura.auction.domain.Payment (class must be instantiated by Interceptor)
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [br.com.alura.auction.domain.User] is safe
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.com.alura.auction.domain.User
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [br.com.alura.auction.domain.User] is safe
+2018-05-27 16:06:07 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.com.alura.auction.domain.User
+2018-05-27 16:06:07 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: br.com.alura.auction.domain.User (class must be instantiated by Interceptor)
+2018-05-27 16:06:07 DEBUG AbstractCollectionPersister:670 - Static SQL for collection: br.com.alura.auction.domain.Auction.bids
+2018-05-27 16:06:07 DEBUG AbstractCollectionPersister:672 -  Row insert: update MOCK_BID set ID=? where id=?
+2018-05-27 16:06:07 DEBUG AbstractCollectionPersister:675 -  Row update: update MOCK_BID set  where id=?
+2018-05-27 16:06:07 DEBUG AbstractCollectionPersister:678 -  Row delete: update MOCK_BID set ID=null where ID=? and id=?
+2018-05-27 16:06:07 DEBUG AbstractCollectionPersister:681 -  One-shot delete: update MOCK_BID set ID=null where ID=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3598 - Static SQL for entity: br.com.alura.auction.domain.Bid
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3603 -  Version select: select id from MOCK_BID where id =?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3606 -  Snapshot select: select bid_.id, bid_.ID as ID1_1_, bid_.user_id as user_id3_1_, bid_.value as value2_1_ from MOCK_BID bid_ where bid_.id=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into MOCK_BID (ID, user_id, value, id) values (?, ?, ?, ?)
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Update 0: update MOCK_BID set ID=?, user_id=?, value=? where id=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from MOCK_BID where id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@187eb9a8]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7b60c3e]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@466d49f0]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user.name
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=br.com.alura.auction.domain.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [NONE]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_, user1_.id as id1_3_1_, user1_.name as name2_3_1_ from MOCK_BID bid0_ left outer join MOCK_USER user1_ on bid0_.user_id=user1_.id where bid0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@332f25c8]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bdcaf36]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@61d01788]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user.name
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=br.com.alura.auction.domain.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [READ]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_, user1_.id as id1_3_1_, user1_.name as name2_3_1_ from MOCK_BID bid0_ left outer join MOCK_USER user1_ on bid0_.user_id=user1_.id where bid0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@264c5d07]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@69cac930]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19593091]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [UPGRADE]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5d39f2d8]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@55ea2d70]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5e742e4]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [UPGRADE_NOWAIT]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@175acfb2]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4e868ef5]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71c905a3]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [UPGRADE_SKIPLOCKED]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@30af7377]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1dab9dd6]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@247667dd]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [FORCE]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f099cef]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bff2185]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5c20ffa8]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [PESSIMISTIC_READ]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=? lock in share mode
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fedfe27]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d4664d7]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@46c00568]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [PESSIMISTIC_WRITE]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56ccd751]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6bcbf05b]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2d66530f]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [PESSIMISTIC_FORCE_INCREMENT]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d207fad]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4690f583]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@59712875]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [OPTIMISTIC]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@47b2e9e1]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1869f114]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@488b50ec]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Bid)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Bid)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Bid.auction)
+          - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Bid.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Bid)
+          - SQL table alias mapping - bid0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Bid [OPTIMISTIC_FORCE_INCREMENT]: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=?
+2018-05-27 16:06:07 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity br.com.alura.auction.domain.Bid: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=?
+2018-05-27 16:06:07 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity br.com.alura.auction.domain.Bid: select bid0_.id as id1_1_0_, bid0_.ID as ID1_1_0_, bid0_.user_id as user_id3_1_0_, bid0_.value as value2_1_0_ from MOCK_BID bid0_ where bid0_.id=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3598 - Static SQL for entity: br.com.alura.auction.domain.Auction
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3603 -  Version select: select ID from MOCK_AUCTION where ID =?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3606 -  Snapshot select: select auction_.ID, auction_.CLOSED as CLOSED2_0_, auction_.AUCTION_DATE as AUCTION_3_0_, auction_.DESCRIPTION as DESCRIPT4_0_ from MOCK_AUCTION auction_ where auction_.ID=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into MOCK_AUCTION (CLOSED, AUCTION_DATE, DESCRIPTION, ID) values (?, ?, ?, ?)
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Update 0: update MOCK_AUCTION set CLOSED=?, AUCTION_DATE=?, DESCRIPTION=? where ID=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from MOCK_AUCTION where ID=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@102d92c4]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@64f555e7]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29be7749]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [NONE]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@30135202]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@10ec523c]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@53dfacba]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [READ]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@79767781]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@aced190]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@245a060f]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [UPGRADE]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6edaa77a]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@62ddd21b]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16c3ca31]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [UPGRADE_NOWAIT]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2d195ee4]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@21ab988f]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29314cc9]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [UPGRADE_SKIPLOCKED]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@35f8a9d3]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6b1e7ad3]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@63e5e5b4]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [FORCE]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@13a37e2a]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1280851e]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5e840abf]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [PESSIMISTIC_READ]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=? lock in share mode
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56de6d6b]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4fcc0416]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@31e32ea2]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [PESSIMISTIC_WRITE]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1473b8c0]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@749f539e]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5ca1f591]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [PESSIMISTIC_FORCE_INCREMENT]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@551de37d]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6075b2d3]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@33abde31]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [OPTIMISTIC]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@997d532]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : bids
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6a969fb8]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7a18e8d]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : closed
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : description
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Auction)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Auction, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Auction)
+          - CollectionAttributeFetchImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:1>, path=br.com.alura.auction.domain.Auction.bids)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:2>, path=br.com.alura.auction.domain.Auction.bids.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Auction)
+          - SQL table alias mapping - auction0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Auction [OPTIMISTIC_FORCE_INCREMENT]: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=?
+2018-05-27 16:06:07 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity br.com.alura.auction.domain.Auction: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=?
+2018-05-27 16:06:07 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity br.com.alura.auction.domain.Auction: select auction0_.ID as ID1_0_0_, auction0_.CLOSED as CLOSED2_0_0_, auction0_.AUCTION_DATE as AUCTION_3_0_0_, auction0_.DESCRIPTION as DESCRIPT4_0_0_ from MOCK_AUCTION auction0_ where auction0_.ID=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3598 - Static SQL for entity: br.com.alura.auction.domain.Payment
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3603 -  Version select: select id from MOCK_PAYMENT where id =?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3606 -  Snapshot select: select payment_.id, payment_.date as date2_2_, payment_.value as value3_2_ from MOCK_PAYMENT payment_ where payment_.id=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into MOCK_PAYMENT (date, value, id) values (?, ?, ?)
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Update 0: update MOCK_PAYMENT set date=?, value=? where id=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from MOCK_PAYMENT where id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3028e50e]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [NONE]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b558294]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [READ]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@777c350f]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [UPGRADE]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4c9e38]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [UPGRADE_NOWAIT]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bdc8b5d]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [UPGRADE_SKIPLOCKED]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f14a673]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [FORCE]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5dc3fcb7]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [PESSIMISTIC_READ]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=? lock in share mode
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76911385]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [PESSIMISTIC_WRITE]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@160396db]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [PESSIMISTIC_FORCE_INCREMENT]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@40ab8a8]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [OPTIMISTIC]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@65cc8228]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : date
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.Payment)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.Payment, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.Payment)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.Payment [OPTIMISTIC_FORCE_INCREMENT]: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=?
+2018-05-27 16:06:07 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity br.com.alura.auction.domain.Payment: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=?
+2018-05-27 16:06:07 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity br.com.alura.auction.domain.Payment: select payment0_.id as id1_2_0_, payment0_.date as date2_2_0_, payment0_.value as value3_2_0_ from MOCK_PAYMENT payment0_ where payment0_.id=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3598 - Static SQL for entity: br.com.alura.auction.domain.User
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3603 -  Version select: select id from MOCK_USER where id =?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:3606 -  Snapshot select: select user_.id, user_.name as name2_3_ from MOCK_USER user_ where user_.id=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into MOCK_USER (name, id) values (?, ?)
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Update 0: update MOCK_USER set name=? where id=?
+2018-05-27 16:06:07 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from MOCK_USER where id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@21719a0]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [NONE]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@77ee25f1]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [READ]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@57b9e423]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [UPGRADE]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@368d5c00]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [UPGRADE_NOWAIT]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@aa10649]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [UPGRADE_SKIPLOCKED]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@37095ded]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [FORCE]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2ca6546f]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [PESSIMISTIC_READ]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=? lock in share mode
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7923f5b3]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [PESSIMISTIC_WRITE]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7578e06a]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=? for update
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56da52a7]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [OPTIMISTIC]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@11a7ba62]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:07 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=br.com.alura.auction.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:0>, path=br.com.alura.auction.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=br.com.alura.auction.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2018-05-27 16:06:07 DEBUG EntityLoader:115 - Static select for entity br.com.alura.auction.domain.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=?
+2018-05-27 16:06:07 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity br.com.alura.auction.domain.User: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=?
+2018-05-27 16:06:07 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity br.com.alura.auction.domain.User: select user0_.id as id1_3_0_, user0_.name as name2_3_0_ from MOCK_USER user0_ where user0_.id=?
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@75b3673]
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1bcb79c2]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : auction
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:145 - Property path deemed to be circular : auction
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user
+2018-05-27 16:06:07 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4078695f]
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : user.name
+2018-05-27 16:06:07 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : value
+2018-05-27 16:06:07 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-05-27 16:06:07 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-05-27 16:06:08 DEBUG LoadPlanTreePrinter:55 - LoadPlan(collection=br.com.alura.auction.domain.Auction.bids)
+    - Returns
+       - CollectionReturnImpl(collection=br.com.alura.auction.domain.Auction.bids, querySpaceUid=<gen:0>, path=[br.com.alura.auction.domain.Auction.bids])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=br.com.alura.auction.domain.Bid, querySpaceUid=<gen:1>, path=[br.com.alura.auction.domain.Auction.bids].<elements>)
+             - EntityAttributeFetchImpl(entity=br.com.alura.auction.domain.User, querySpaceUid=<gen:2>, path=[br.com.alura.auction.domain.Auction.bids].<elements>.user)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=br.com.alura.auction.domain.Auction.bids)
+          - SQL table alias mapping - bids0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=br.com.alura.auction.domain.Bid)
+                - SQL table alias mapping - bids0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=br.com.alura.auction.domain.User)
+                      - SQL table alias mapping - user1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_3_2_}
+
+2018-05-27 16:06:08 DEBUG CollectionLoader:83 - Static select for collection br.com.alura.auction.domain.Auction.bids: select bids0_.ID as ID1_1_0_, bids0_.id as id1_1_0_, bids0_.id as id1_1_1_, bids0_.ID as ID1_1_1_, bids0_.user_id as user_id3_1_1_, bids0_.value as value2_1_1_, user1_.id as id1_3_2_, user1_.name as name2_3_2_ from MOCK_BID bids0_ left outer join MOCK_USER user1_ on bids0_.user_id=user1_.id where bids0_.ID=?
+2018-05-27 16:06:08 DEBUG SQL:92 - drop table if exists MOCK_AUCTION
+2018-05-27 16:06:08 DEBUG SQL:92 - drop table if exists MOCK_BID
+2018-05-27 16:06:08 DEBUG SQL:92 - drop table if exists MOCK_PAYMENT
+2018-05-27 16:06:08 DEBUG SQL:92 - drop table if exists MOCK_USER
+2018-05-27 16:06:08 DEBUG SQL:92 - drop table if exists SMOCK_AUCTION
+2018-05-27 16:06:08 DEBUG SQL:92 - drop table if exists SMOCK_BID
+2018-05-27 16:06:08 DEBUG SQL:92 - drop table if exists SMOCK_PAYMENT
+2018-05-27 16:06:08 DEBUG SQL:92 - drop table if exists SMOCK_USER
+2018-05-27 16:06:08 DEBUG SQL:92 - create table MOCK_AUCTION (ID bigint not null, CLOSED bit, AUCTION_DATE date, DESCRIPTION varchar(255), primary key (ID)) engine=MyISAM
+2018-05-27 16:06:08 DEBUG SQL:92 - create table MOCK_BID (id bigint not null, value double precision, user_id bigint, primary key (id)) engine=MyISAM
+2018-05-27 16:06:08 DEBUG SQL:92 - create table MOCK_PAYMENT (id bigint not null, date datetime, value double precision, primary key (id)) engine=MyISAM
+2018-05-27 16:06:08 DEBUG SQL:92 - create table MOCK_USER (id bigint not null, name varchar(255), primary key (id)) engine=MyISAM
+2018-05-27 16:06:08 DEBUG SQL:92 - create table SMOCK_AUCTION (next_val bigint) engine=MyISAM
+2018-05-27 16:06:08 DEBUG SQL:92 - insert into SMOCK_AUCTION values ( 1 )
+2018-05-27 16:06:08 DEBUG SQL:92 - create table SMOCK_BID (next_val bigint) engine=MyISAM
+2018-05-27 16:06:08 DEBUG SQL:92 - insert into SMOCK_BID values ( 1 )
+2018-05-27 16:06:08 DEBUG SQL:92 - create table SMOCK_PAYMENT (next_val bigint) engine=MyISAM
+2018-05-27 16:06:08 DEBUG SQL:92 - insert into SMOCK_PAYMENT values ( 1 )
+2018-05-27 16:06:08 DEBUG SQL:92 - create table SMOCK_USER (next_val bigint) engine=MyISAM
+2018-05-27 16:06:08 DEBUG SQL:92 - insert into SMOCK_USER values ( 1 )
+2018-05-27 16:06:08 DEBUG SQL:92 - alter table MOCK_BID add constraint FKfuqxkkuqjev0wnrlxxfpoqasn foreign key (ID) references MOCK_AUCTION (ID)
+2018-05-27 16:06:08 DEBUG SQL:92 - alter table MOCK_BID add constraint FKsvrb9uldv2mixpvi0ug1jn3s4 foreign key (user_id) references MOCK_USER (id)
+2018-05-27 16:06:08 INFO  SchemaCreatorImpl:489 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@35d3ab60'
+2018-05-27 16:06:08 DEBUG JtaPlatformInitiator:42 - No JtaPlatform was specified, checking resolver
+2018-05-27 16:06:08 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2018-05-27 16:06:08 DEBUG StandardJtaPlatformResolver:102 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2018-05-27 16:06:08 DEBUG NamedQueryRepository:151 - Checking 0 named HQL queries
+2018-05-27 16:06:08 DEBUG NamedQueryRepository:167 - Checking 0 named SQL queries
+2018-05-27 16:06:08 DEBUG SessionFactoryRegistry:52 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@47d7bfb3
+2018-05-27 16:06:08 DEBUG SessionFactoryRegistry:74 - Registering SessionFactory: a9423328-7863-4e67-abeb-35c8627fbe7c (<unnamed>)
+2018-05-27 16:06:08 DEBUG SessionFactoryRegistry:81 - Not binding SessionFactory to JNDI, no JNDI name configured
+2018-05-27 16:06:08 DEBUG StatisticsInitiator:82 - Statistics initialized [enabled=false]
+2018-05-27 16:06:08 DEBUG TransactionImpl:55 - begin
+2018-05-27 16:06:08 DEBUG SQL:92 - select next_val as id_val from SMOCK_AUCTION for update
+2018-05-27 16:06:08 DEBUG SQL:92 - update SMOCK_AUCTION set next_val= ? where next_val=?
+2018-05-27 16:06:08 DEBUG AbstractSaveEventListener:118 - Generated identifier: 1, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2018-05-27 16:06:08 DEBUG TransactionImpl:66 - committing
+2018-05-27 16:06:08 DEBUG AbstractFlushingEventListener:132 - Processing flush-time cascades
+2018-05-27 16:06:08 DEBUG AbstractFlushingEventListener:174 - Dirty checking collections
+2018-05-27 16:06:08 DEBUG Collections:189 - Collection found: [br.com.alura.auction.domain.Auction.bids#1], was: [<unreferenced>] (initialized)
+2018-05-27 16:06:08 DEBUG AbstractFlushingEventListener:106 - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+2018-05-27 16:06:08 DEBUG AbstractFlushingEventListener:113 - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+2018-05-27 16:06:08 DEBUG EntityPrinter:102 - Listing entities:
+2018-05-27 16:06:08 DEBUG EntityPrinter:109 - br.com.alura.auction.domain.Auction{date=java.util.GregorianCalendar[time=1527447968607,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="America/Sao_Paulo",offset=-10800000,dstSavings=3600000,useDaylight=true,transitions=129,lastRule=java.util.SimpleTimeZone[id=America/Sao_Paulo,offset=-10800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=10,startDay=1,startDayOfWeek=1,startTime=0,startTimeMode=0,endMode=3,endMonth=1,endDay=15,endDayOfWeek=1,endTime=0,endTimeMode=0]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2018,MONTH=4,WEEK_OF_YEAR=22,WEEK_OF_MONTH=5,DAY_OF_MONTH=27,DAY_OF_YEAR=147,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=4,AM_PM=1,HOUR=4,HOUR_OF_DAY=16,MINUTE=6,SECOND=8,MILLISECOND=607,ZONE_OFFSET=-10800000,DST_OFFSET=0], bids=[], closed=false, description=BMW 320, id=1}
+2018-05-27 16:06:08 DEBUG SQL:92 - insert into MOCK_AUCTION (CLOSED, AUCTION_DATE, DESCRIPTION, ID) values (?, ?, ?, ?)
+2018-05-27 16:06:08 DEBUG JdbcCoordinatorImpl:177 - HHH000420: Closing un-released batch
+2018-05-27 16:06:09 ERROR AuctionCloser:33 - Error to close auction Plasma TV. Error [%s]
+java.lang.RuntimeException
+	at br.com.alura.auction.service.AuctionCloser.lambda$close$0(AuctionCloser.java:29)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at br.com.alura.auction.service.AuctionCloser.close(AuctionCloser.java:24)
+	at br.com.alura.auction.service.AuctionCloserTest.shouldThrowExceptionToAllAuctionsOnTheListUsingAny(AuctionCloserTest.java:219)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018-05-27 16:06:09 ERROR AuctionCloser:33 - Error to close auction Refrigerator. Error [%s]
+java.lang.RuntimeException
+	at br.com.alura.auction.service.AuctionCloser.lambda$close$0(AuctionCloser.java:29)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at br.com.alura.auction.service.AuctionCloser.close(AuctionCloser.java:24)
+	at br.com.alura.auction.service.AuctionCloserTest.shouldThrowExceptionToAllAuctionsOnTheListUsingAny(AuctionCloserTest.java:219)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018-05-27 16:06:09 ERROR AuctionCloser:33 - Error to close auction Plasma TV. Error [%s]
+java.lang.RuntimeException
+	at br.com.alura.auction.service.AuctionCloser.lambda$close$0(AuctionCloser.java:29)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at br.com.alura.auction.service.AuctionCloser.close(AuctionCloser.java:24)
+	at br.com.alura.auction.service.AuctionCloserTest.shouldContinueExecutionEvenIfDaoFails(AuctionCloserTest.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018-05-27 16:06:09 ERROR AuctionCloser:33 - Error to close auction Plasma TV. Error [%s]
+java.lang.RuntimeException
+	at br.com.alura.auction.service.AuctionCloser.lambda$close$0(AuctionCloser.java:29)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at br.com.alura.auction.service.AuctionCloser.close(AuctionCloser.java:24)
+	at br.com.alura.auction.service.AuctionCloserTest.shouldThrowExceptionToAllAuctionsOnTheList(AuctionCloserTest.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018-05-27 16:06:09 ERROR AuctionCloser:33 - Error to close auction Refrigerator. Error [%s]
+java.lang.RuntimeException
+	at br.com.alura.auction.service.AuctionCloser.lambda$close$0(AuctionCloser.java:29)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at br.com.alura.auction.service.AuctionCloser.close(AuctionCloser.java:24)
+	at br.com.alura.auction.service.AuctionCloserTest.shouldThrowExceptionToAllAuctionsOnTheList(AuctionCloserTest.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018-05-27 16:06:09 DEBUG SessionFactoryImpl:733 - HHH000031: Closing
+2018-05-27 16:06:09 INFO  SchemaDropperImpl$DelayedDropActionImpl:524 - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-05-27 16:06:09 DEBUG SQL:92 - drop table if exists MOCK_AUCTION
+2018-05-27 16:06:09 DEBUG SQL:92 - drop table if exists MOCK_BID
+2018-05-27 16:06:09 DEBUG SQL:92 - drop table if exists MOCK_PAYMENT
+2018-05-27 16:06:09 DEBUG SQL:92 - drop table if exists MOCK_USER
+2018-05-27 16:06:09 DEBUG SQL:92 - drop table if exists SMOCK_AUCTION
+2018-05-27 16:06:09 DEBUG SQL:92 - drop table if exists SMOCK_BID
+2018-05-27 16:06:09 DEBUG SQL:92 - drop table if exists SMOCK_PAYMENT
+2018-05-27 16:06:09 DEBUG SQL:92 - drop table if exists SMOCK_USER
+2018-05-27 16:06:09 DEBUG CascadeStyles:268 - External cascade style regsitration [persist : STYLE_PERSIST] overrode base registration [STYLE_PERSIST_SKIPLAZY]
+2018-05-27 16:06:09 DEBUG AbstractServiceRegistryImpl:414 - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2018-05-27 16:06:09 DEBUG BootstrapServiceRegistryImpl:295 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries

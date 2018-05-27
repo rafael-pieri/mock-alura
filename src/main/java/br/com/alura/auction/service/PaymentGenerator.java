@@ -4,8 +4,8 @@ import br.com.alura.auction.domain.Auction;
 import br.com.alura.auction.domain.Clock;
 import br.com.alura.auction.domain.Payment;
 import br.com.alura.auction.domain.SystemClock;
-import br.com.alura.auction.infra.dao.AuctionRepository;
-import br.com.alura.auction.infra.dao.PaymentRepository;
+import br.com.alura.auction.repository.AuctionRepository;
+import br.com.alura.auction.repository.PaymentRepository;
 import java.util.Calendar;
 import java.util.List;
 

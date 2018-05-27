@@ -1,8 +1,8 @@
 package br.com.alura.auction.domain;
 
 import br.com.alura.auction.config.JPAConfiguration;
-import br.com.alura.auction.infra.dao.AuctionDao;
-import br.com.alura.auction.infra.dao.AuctionRepository;
+import br.com.alura.auction.repository.AuctionDao;
+import br.com.alura.auction.repository.AuctionRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -14,8 +14,8 @@ import static org.mockito.Mockito.when;
 
 import br.com.alura.auction.builder.AuctionCreator;
 import br.com.alura.auction.domain.Auction;
-import br.com.alura.auction.infra.dao.AuctionDao;
-import br.com.alura.auction.infra.dao.AuctionRepository;
+import br.com.alura.auction.repository.AuctionDao;
+import br.com.alura.auction.repository.AuctionRepository;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;

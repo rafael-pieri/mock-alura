@@ -1,4 +1,4 @@
-package br.com.alura.auction.infra.dao;
+package br.com.alura.auction.repository;
 
 import br.com.alura.auction.domain.Auction;
 import br.com.alura.auction.domain.Bid;
