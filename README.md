@@ -29,3 +29,12 @@ This repository contains some examples of how to use mocks in automatic tests. B
 * Difficulty testing code that does a lot
 * Good Code Practice
 * Separating Responsibilities to Facilitate Testing
+
+### How to run all tests successfully
+Execute the following command to up a MYSQL instance:
+
+```docker-compose up```
+
+Once the database is up and running, execute the following command to run the automatic tests:
+
+```mvn test```
