@@ -1,10 +1,10 @@
-## Alura Online Courses - Mock: Automatic Test in Java
+## Mock: Automatic Test in Java
 
 ### Overview
 In object-oriented programming, mock objects are simulated objects that mimic the behavior of real objects in controlled ways. 
 A programmer typically creates a mock object to test the behavior of some other object.
 
-This repository contains some examples of how to use mocks in automatic tests. Below are listed the topics covered during this course:
+This repository contains some examples of how to use mocks in automatic testing. Below are listed the topics covered:
 
 #### Simulating Behaviors with Mock Objects
 * The problem of depending on other systems
