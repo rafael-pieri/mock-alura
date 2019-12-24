@@ -46,7 +46,7 @@ public class JPAConfiguration {
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/mockDB?createDatabaseIfNotExist=true&useSSL=false");
-        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setDriverClassName("org.hibernate.dialect.MySQL5Dialect");
         return dataSource;
     }
 

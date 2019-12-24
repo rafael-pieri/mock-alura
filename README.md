@@ -35,7 +35,7 @@ This repository contains some examples of how to use mocks in automatic testing.
 ### How to run all tests successfully
 Execute the following command to up a MYSQL instance:
 
-```docker run --name mysql-instance -e MYSQL_ROOT_PASSWORD=root -d mysql:8.0.11```
+```docker run --name mysql-instance -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7```
 
 Once the database is up and running, execute the following command to run the automatic tests:
 
