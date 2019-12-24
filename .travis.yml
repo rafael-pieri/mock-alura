@@ -1,4 +1,4 @@
 language: java
 
 before_install:
-  - docker run --name mysql-instance -e MYSQL_ROOT_PASSWORD=root -d mysql:8.0.11
+  - docker run --name mysql-instance -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:8.0.11
