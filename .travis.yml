@@ -1,7 +1,7 @@
 language: java
 
 services:
-  - mysql
+  - docker
 
 before_install:
-  - mysql -e 'CREATE DATABASE mock_alura;'
+  - docker run --name mysql-instance -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:8.0.11
