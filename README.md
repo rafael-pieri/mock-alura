@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/rafael-pieri/mock-alura.svg?branch=master)](https://travis-ci.com/rafael-pieri/mock-alura)
+
 ## Mock: Automatic Test in Java
 
 ### Overview
